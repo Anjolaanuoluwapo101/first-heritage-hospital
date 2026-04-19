@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock, ShieldCheck } from "lucide-react";
 
 export const SiteFooter = () => {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-secondary/90 text-secondary-foreground">
       <div className="container py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-background/15">
           <div className="pb-10 md:pb-0 md:pr-10">
