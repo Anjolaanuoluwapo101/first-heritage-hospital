@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* First Heritage Hospital — Architectural & Brutalist-Premium Design System
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Architectural neutrals */
+    --background: 0 0% 100%;            /* Pure White */
+    --foreground: 0 0% 6%;              /* Near-black ink */
+
+    --ash: 210 40% 96.1%;               /* Architectural Ash #f1f5f9 */
+    --ash-foreground: 0 0% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 6%;
+
+    /* Medical Crimson #b91c1c */
+    --primary: 0 73% 41%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Heritage Green #14532d */
+    --secondary: 142 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 35%;
+
+    --accent: 0 73% 41%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 73% 41%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 88%;
+    --input: 0 0% 80%;
+    --ring: 0 73% 41%;
+
+    --radius: 0;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 0 73% 41%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 0 73% 41%;
+  }
+
+  .dark {
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+    --ash: 0 0% 12%;
+    --ash-foreground: 0 0% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 73% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 60% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 73% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 73% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 73% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  /* Architectural sub-header */
+  .eyebrow {
+    @apply font-sans uppercase tracking-[0.25em] text-xs text-muted-foreground;
+  }
+
+  .wordmark {
+    @apply font-serif tracking-[0.2em] uppercase;
+  }
+}
+
+@layer components {
+  /* Brutalist bottom-border-only input */
+  .input-brutal {
+    @apply w-full bg-transparent border-0 border-b border-foreground/40 rounded-none px-0 py-3
+           text-base text-foreground placeholder:text-muted-foreground
+           focus:outline-none focus:border-primary focus:border-b-2 transition-colors;
+  }
+
+  .btn-brutal {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 rounded-none
+           font-sans uppercase tracking-[0.2em] text-xs font-medium
+           border border-foreground bg-foreground text-background
+           hover:bg-background hover:text-foreground transition-colors;
+  }
+
+  .btn-brutal-primary {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 rounded-none
+           font-sans uppercase tracking-[0.2em] text-xs font-medium
+           border border-primary bg-primary text-primary-foreground
+           hover:bg-background hover:text-primary transition-colors;
+  }
+
+  .btn-brutal-ghost {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 rounded-none
+           font-sans uppercase tracking-[0.2em] text-xs font-medium
+           border border-foreground bg-transparent text-foreground
+           hover:bg-foreground hover:text-background transition-colors;
+  }
+
+  .grayscale-hover {
+    @apply grayscale hover:grayscale-0 transition-[filter] duration-700;
+  }
+}
