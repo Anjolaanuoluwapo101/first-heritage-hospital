@@ -69,7 +69,7 @@ const Index = () => {
                 <img
                   src={outsideDay}
                   alt="First Heritage Hospital exterior in Mushin, Lagos"
-                  className="w-full h-full object-cover grayscale-hover"
+                  className="w-full h-full object-cover "
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-background/95 border-t border-foreground p-5 flex items-center justify-between">
                   <div>
@@ -135,7 +135,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-px bg-foreground/20 border border-foreground/20">
             {/* Block 1 — Large */}
             <article className="md:col-span-2 md:row-span-2 bg-background relative group overflow-hidden min-h-[400px]">
-              <img src={standby} alt="JMG heavy duty standby generator" className="absolute inset-0 w-full h-full object-cover grayscale-hover" />
+              <img src={standby} alt="JMG heavy duty standby generator" className="absolute inset-0 w-full h-full object-cover " />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/30 to-transparent" />
               <div className="relative h-full flex flex-col justify-end p-8 md:p-12 text-background">
                 <Zap className="h-8 w-8 mb-4 text-primary" />
@@ -151,7 +151,7 @@ const Index = () => {
 
             {/* Block 2 — Medium */}
             <article className="md:col-span-2 bg-background relative group overflow-hidden min-h-[260px]">
-              <img src={pharmacy} alt="In house pharmacy" className="absolute inset-0 w-full h-full object-cover grayscale-hover" />
+              <img src={pharmacy} alt="In house pharmacy" className="absolute inset-0 w-full h-full object-cover " />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 to-transparent" />
               <div className="relative h-full flex flex-col justify-end p-8 text-background">
                 <Pill className="h-6 w-6 mb-3 text-primary" />
@@ -165,7 +165,7 @@ const Index = () => {
 
             {/* Block 3 — Medium */}
             <article className="bg-background relative group overflow-hidden min-h-[260px]">
-              <img src={moreReception} alt="Patient intake reception" className="absolute inset-0 w-full h-full object-cover grayscale-hover" />
+              <img src={moreReception} alt="Patient intake reception" className="absolute inset-0 w-full h-full object-cover " />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 to-transparent" />
               <div className="relative h-full flex flex-col justify-end p-8 text-background">
                 <Users className="h-6 w-6 mb-3 text-primary" />
@@ -176,7 +176,7 @@ const Index = () => {
 
             {/* Block 4 — Small */}
             <article className="bg-background relative group overflow-hidden min-h-[260px]">
-              <img src={entrance} alt="Distinct red door entrance" className="absolute inset-0 w-full h-full object-cover grayscale-hover" />
+              <img src={entrance} alt="Distinct red door entrance" className="absolute inset-0 w-full h-full object-cover " />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 to-transparent" />
               <div className="relative h-full flex flex-col justify-end p-8 text-background">
                 <DoorClosed className="h-6 w-6 mb-3 text-primary" />
