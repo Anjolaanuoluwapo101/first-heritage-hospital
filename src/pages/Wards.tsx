@@ -12,15 +12,15 @@ const Wards = () => {
         <div className="container py-24 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-7">
-              <p className="eyebrow mb-6">Premium Wards · Olusanya Wing</p>
+              <p className="eyebrow mb-6">Premium Wards</p>
               <motion.h1
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="font-serif text-5xl md:text-7xl leading-[0.95]"
               >
-                The Olusanya<br />
-                <span className="italic text-primary">Ward Experience.</span>
+                A glimpse of the<br />
+                <span className="italic text-primary">Wards.</span>
               </motion.h1>
             </div>
             <div className="lg:col-span-5 lg:border-l lg:border-foreground/30 lg:pl-10">
@@ -43,8 +43,8 @@ const Wards = () => {
             <span className="hidden md:block font-serif text-xl text-muted-foreground">01 / 01</span>
           </div>
           <CustomVideoPlayer src="/media/ward-walkthrough.mp4" poster={receptionTv} />
-          <p className="mt-6 max-w-2xl text-sm text-muted-foreground">
-            Filmed inside the Olusanya Ward exactly as it stands today. No staging, no stock footage. What you see is the room you will be admitted to.
+          <p className="mt-6 max-w-4xl text-sm text-muted-foreground">
+            Filmed inside the our Ward exactly as it stands today. No staging, no stock footage. What you see is the room you will be admitted to.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ const Wards = () => {
 
           <div className="mt-16 flex flex-wrap gap-4 items-center">
             <BedDouble className="h-6 w-6" />
-            <span className="font-serif text-xl">Room 5 available on request.</span>
+            <span className="font-serif text-xl">A ward room is available on request.</span>
             <Link to="/contact" className="btn-brutal-primary md:ml-auto">
               Reserve a Ward <ArrowRight className="h-4 w-4" />
             </Link>
